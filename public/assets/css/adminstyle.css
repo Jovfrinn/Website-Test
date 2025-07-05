@@ -1,0 +1,35 @@
+.link-add-class{
+    background-color: rgb(15, 173, 15);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+}
+.link-add-class a{
+    color: white;
+    font-size: 50px;
+}
+.link-add-class a:hover{
+    color: white;
+    transform: rotate(360deg);
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.link-add-class div{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 75px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    padding: 0 10px;
+}
+
+.link-add-class:hover div{
+    display: block;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

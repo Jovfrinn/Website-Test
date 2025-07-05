@@ -1,0 +1,171 @@
+
+.student-card {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    overflow: hidden; /* Memastikan sudut tumpul diterapkan dengan benar */
+}
+
+
+
+/* Tombol "Ubah data diri" */
+.edit-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    color: #495057;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Bagian informasi kelas dan wali kelas */
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    font-size: 16px;
+    color: #343a40;
+}
+
+.card-info strong {
+    color: #6c757d;
+}
+
+/* Kontainer untuk tabel agar bisa di-scroll jika perlu */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Membuat tabel bisa digulir ke samping pada layar kecil */
+}
+
+/* Tabel data siswa */
+.student-table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan spasi antar border */
+}
+
+.student-table th,
+.student-table td {
+    padding: 16px 24px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+    text-align: center;
+}
+
+/* Header tabel */
+.student-table thead th {
+    background-color: #e5e6e7;
+    font-weight: 600;
+    font-size: 14px;
+    color: #495057;
+    text-transform: uppercase;
+    border-left: 1px solid #b9b9b9;
+}
+
+/* Baris data pada tabel */
+.student-table tbody tr:last-child td {
+    border-bottom: none; /* Menghilangkan border pada baris terakhir */
+}
+
+.student-table tbody tr:hover {
+    background-color: #f1f3f5; /* Efek hover pada baris */
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/* Judul dan subjudul formulir */
+.form-container h2 {
+    margin: 0 0 10px;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-container p {
+    margin: 0 0 30px;
+    color: #666;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Grup untuk setiap pasangan label dan input */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk label */
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Gaya untuk input teks dan textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Menghilangkan kemampuan resize horizontal pada textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Efek visual saat input di-klik (fokus) */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Gaya untuk tombol submit */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
